@@ -15,7 +15,9 @@ namespace Assignment_Session_10
             Console.ReadKey();
         }
 
-        public class Bank_Account
+      
+    }
+      public class Bank_Account
         {
             //Fields --------------------
 
@@ -197,5 +199,5 @@ namespace Assignment_Session_10
 
 
         }
-    }
 }
+
