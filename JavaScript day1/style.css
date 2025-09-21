@@ -14,6 +14,10 @@
     padding: 5px;
     cursor: pointer;
     margin-right: 10px;
+    background-color: rgb(254, 75, 32);
+    font-weight: bold;
+    color: white;
+    border: 1px solid rgb(254, 75, 32);
 }
 #imgsize{
    display: block;
