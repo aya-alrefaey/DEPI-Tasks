@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Day 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="in" >
+ <label for="name"> Enter Your Name :</label>
+    <input type="text" name="name" id="name">
+    <div id="nameerror"></div>
+    </div>
+    <div class="in" >
+    <label for="img"> Enter Your Image :</label>
+    <input type="text" name="img" id="img">
+    <div id="imgerror"></div>
+    </div>
+   
+     <div class="in" > <label for="sel"> Select Font :</label>
+    <select name="sel" id="sel">
+        <option value="10px">10px</option>
+        <option value="16px">16px</option>
+        <option value="24px">24px</option>
+        <option value="30px">30px</option>
+        <option value="35px">35px</option>
+        <option value="40px">40px</option>
+    </select></div>
+    <div id="btns" class="in">
+    <button id="fontplus" class="btn">Font +</button>
+    <button id="fontmin"class="btn">Font -</button>
+   
+    </div>
+     <button id="clickbtn"class="btn">Click</button>
+   <div id="display">
+     <p id="welcome"></p>
+    <img id="userimg">
+     <button id="imgsize"></button>
+     <span id="diserror"></span>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
