@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <form  id="editform">
+<h1>Edit book</h1>
+   <div>
+<label for="isbn">ISBN</label>
+<input type="text" id="isbn" name="isbn">
+   </div>
+    <!-- <div>
+ <label for="id">ID</label>
+<input type="number" id="id" name="id" >
+    </div> -->
+
+   <div>
+    <label for="name">Book Name</label>
+    <input type="text" id="name" name="name">
+   </div>
+<div>
+  <label for="desc">Description</label>  
+  <input type="text" id="desc" name="desc">
+</div>
+<div>
+  <label for="price">Price</label>  
+  <input type="number" id="price" name="price">
+</div>
+<div>
+  <label for="author">Author</label>  
+  <input type="text" id="author" name="author">
+</div>
+<div>
+  <label for="pub">Publish Date</label>  
+  <input type="date" id="pub" name="pub">
+</div>
+<div>
+  <label for="ava">Available</label>  
+  <input type="text" id="ava" name="ava">
+</div>
+
+<input type="Submit" id="submit">
+<p id="editmsg"></p>
+  </form>
+</body>
+
+<script >
+
+    const editform = document.getElementById("editform");
+    const editmsg = document.getElementById("editmsg");
+    const id = location.search.split("=").pop();
+
+   const info=new XMLHttpRequest();
+   info.open("get",`https://68d9a7fb90a75154f0dadf34.mockapi.io/api/books/Books/${id}`);
+   info.onreadystatechange=function(){
+    if(info.readyState==4&& info.status===200){
+        const book=JSON.parse(info.responseText);
+         editform.isbn.value = book.isbn;
+      editform.name.value = book.bookname;
+      editform.desc.value = book.description;
+      editform.price.value = book.price;
+      editform.author.value = book.author;
+      editform.pub.value = book.publishdate;
+      editform.ava.value = book.available;
+    }
+   }
+   info.send();
+
+
+
+    editform.onsubmit = function (e) {
+      e.preventDefault();
+
+      const data = {
+        isbn: editform.isbn.value,
+        bookname: editform.name.value,
+        description: editform.desc.value,
+        price: editform.price.value,
+        author: editform.author.value,
+        publishdate: editform.pub.value,
+        available: editform.ava.value
+      };
+
+      const xhr3 = new XMLHttpRequest();
+      xhr3.open("PUT", `https://68d9a7fb90a75154f0dadf34.mockapi.io/api/books/Books/${id}`);
+      xhr3.setRequestHeader("content-type", "application/json");
+      xhr3.onreadystatechange = function () {
+        if (xhr3.readyState === 4) {
+          if (xhr3.status === 200) {
+            editmsg.innerText = "Book Changed Successfully ...";
+            editmsg.style.color = "green";
+            editmsg.style.textAlign = "center";
+         
+            setTimeout(() => {
+              window.location.href = "fakeapi.html";
+            }, 1000);
+          } else {
+            editmsg.innerText = "Book Is Not Changed ...";
+            editmsg.style.color = "red";
+            editmsg.style.textAlign = "center";
+          }
+        }
+      };
+      xhr3.send(JSON.stringify(data));
+    };
+
+</script>
+</html>
