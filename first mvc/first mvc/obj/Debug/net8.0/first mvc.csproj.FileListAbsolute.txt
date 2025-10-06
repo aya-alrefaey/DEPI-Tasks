@@ -1,0 +1,33 @@
+E:\DEPI\first mvc\first mvc\bin\Debug\net8.0\appsettings.Development.json
+E:\DEPI\first mvc\first mvc\bin\Debug\net8.0\appsettings.json
+E:\DEPI\first mvc\first mvc\bin\Debug\net8.0\first mvc.staticwebassets.runtime.json
+E:\DEPI\first mvc\first mvc\bin\Debug\net8.0\first mvc.staticwebassets.endpoints.json
+E:\DEPI\first mvc\first mvc\bin\Debug\net8.0\first mvc.exe
+E:\DEPI\first mvc\first mvc\bin\Debug\net8.0\first mvc.deps.json
+E:\DEPI\first mvc\first mvc\bin\Debug\net8.0\first mvc.runtimeconfig.json
+E:\DEPI\first mvc\first mvc\bin\Debug\net8.0\first mvc.dll
+E:\DEPI\first mvc\first mvc\bin\Debug\net8.0\first mvc.pdb
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\rpswa.dswa.cache.json
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\first mvc.GeneratedMSBuildEditorConfig.editorconfig
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\first mvc.AssemblyInfoInputs.cache
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\first mvc.AssemblyInfo.cs
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\first mvc.csproj.CoreCompileInputs.cache
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\first mvc.MvcApplicationPartsAssemblyInfo.cache
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\first mvc.RazorAssemblyInfo.cache
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\first mvc.RazorAssemblyInfo.cs
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\rjimswa.dswa.cache.json
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\scopedcss\bundle\first mvc.styles.css
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\scopedcss\projectbundle\first mvc.bundle.scp.css
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\staticwebassets.build.json
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\staticwebassets.build.json.cache
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\staticwebassets.development.json
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\first mvc.dll
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\refint\first mvc.dll
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\first mvc.pdb
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\first mvc.genruntimeconfig.cache
+E:\DEPI\first mvc\first mvc\obj\Debug\net8.0\ref\first mvc.dll

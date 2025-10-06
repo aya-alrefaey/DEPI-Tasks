@@ -1,0 +1,125 @@
+wwwroot\assets\css\dataTables.bootstrap4.css
+wwwroot\assets\css\style.css
+wwwroot\assets\css\style.min.css
+wwwroot\assets\js\app-style-switcher.js
+wwwroot\assets\js\bootstrap.bundle.min.js
+wwwroot\assets\js\custom.js
+wwwroot\assets\js\custom.min.js
+wwwroot\assets\js\datatables.min.js
+wwwroot\assets\js\jquery-ui.min.js
+wwwroot\assets\js\jquery.min.js
+wwwroot\assets\js\jquery.ui.touch-punch-improved.js
+wwwroot\assets\js\perfect-scrollbar.jquery.min.js
+wwwroot\assets\js\sidebarmenu.js
+wwwroot\assets\js\sparkline.js
+wwwroot\assets\js\waves.js
+wwwroot\css\index.css
+wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\img\16Oct24 Nazzasi Free Upload (1).png
+wwwroot\img\16Oct24 Nazzasi Free Upload.png
+wwwroot\img\black.png
+wwwroot\img\Boho crochet earrings fringes.jpg
+wwwroot\img\bott.jpg
+wwwroot\img\bottles.jpg
+wwwroot\img\Brinco de Macramê_ Aprenda a Fazer Dois Modelos Maravilhosos - Revista Artesanato.jpg
+wwwroot\img\Brown Simple Knitting Workshop Facebook Post.png
+wwwroot\img\cart-bold.png
+wwwroot\img\cart.png
+wwwroot\img\com.png
+wwwroot\img\comblack.png
+wwwroot\img\community.png
+wwwroot\img\Crochet Hoop Earrings.jpg
+wwwroot\img\delblack.png
+wwwroot\img\delivery.png
+wwwroot\img\download (1).jpg
+wwwroot\img\Download app store.png
+wwwroot\img\download google play.png
+wwwroot\img\download.jpg
+wwwroot\img\earrings.jpg
+wwwroot\img\Facebook.png
+wwwroot\img\Garrafas decoradas.jpg
+wwwroot\img\hand.png
+wwwroot\img\handblack.png
+wwwroot\img\insta.png
+wwwroot\img\Linkedin.png
+wwwroot\img\logof.png
+wwwroot\img\logohand-removebg-preview.png
+wwwroot\img\logohand.jpg
+wwwroot\img\logoo-removebg-preview.png
+wwwroot\img\logoo.jpg
+wwwroot\img\makramia.jpg
+wwwroot\img\Makrome Tasarım Küpe.jpg
+wwwroot\img\menu.png
+wwwroot\img\mugs.jpg
+wwwroot\img\photo_2025-08-09_21-35-17.jpg
+wwwroot\img\ph_hand-heart-fill.png
+wwwroot\img\Post from Cup of Coffee Crochet.jpg
+wwwroot\img\RSS.png
+wwwroot\img\Screenshot 2025-08-05 235130.png
+wwwroot\img\Screenshot222 2025-08-05 235308.png
+wwwroot\img\secbrown.png
+wwwroot\img\secure.png
+wwwroot\img\Tiktok.png
+wwwroot\img\user-filled.png
+wwwroot\img\user.png
+wwwroot\img\van.png
+wwwroot\img\x.png
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\LICENSE.txt
