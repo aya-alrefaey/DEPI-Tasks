@@ -1,0 +1,702 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    background-color: #FAF9F6;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #d6d2cd;
+    /* position: fixed;
+    z-index: 1000; */
+}
+
+    header ul {
+        display: flex;
+        gap: 30px;
+        list-style-type: none;
+        padding-right: 25px;
+    }
+
+        header ul a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            line-height: 30px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+#close {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+#logo img {
+    /* width: 180px;
+    height:50px ; */
+    width: 140px;
+    height: 60px;
+    padding-left: 10px;
+    /* لما كان تيكست
+    text-decoration: none;
+    color: black;
+    font-size: xx-large; */
+}
+
+#home {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Brown Simple Knitting Workshop Facebook Post.png");
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: #d6d2cd;
+    line-height: 70px;
+}
+
+#handora {
+    font-size: 80px;
+    font-weight: bolder;
+    padding-right: 130px;
+}
+
+#hand {
+    font-size: x-large;
+    font-weight: bold;
+    padding-right: 80px;
+}
+
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #search div {
+        width: 80%;
+        height: 160px;
+        border: 1px #594d43 solid;
+        border-radius: 25px;
+        /* position: relative; */
+        transform: translateY(-80px);
+        background-color: #d6d2cd;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #search button {
+        color: white;
+        background-color: #594d43;
+        border: 1px solid white;
+        cursor: pointer;
+        border-radius: 5px;
+        /* margin-left: 810px; */
+        height: 30px;
+        width: 100px;
+        font-size: medium;
+    }
+
+#se {
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+}
+
+#search label {
+    /* margin-left: -635px; */
+    font-weight: bold;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    border: 1px solid #d6d2cd;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cart {
+    background-color: #68b66a;
+    border: 1px solid #68b66a;
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#products h1 {
+    margin-top: -40px;
+    font-size: xx-large;
+    color: #594d43;
+    margin-bottom: 50px;
+}
+
+#items a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #594d43;
+}
+
+.headprice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.productimg {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+#items p {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #4caf50;
+}
+
+.name {
+    font-weight: bold;
+}
+
+#pro {
+    color: #594d43;
+    margin: 10px 0px 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#o {
+    background-image: url("/img/Screenshot222\ 2025-08-05\ 235308.png");
+}
+
+#t {
+    background-image: url("/img/Screenshot\ 2025-08-05\ 235130.png");
+}
+
+#th {
+    background-image: url("/img/makramia.jpg");
+}
+
+#f {
+    background-image: url("/img/mugs.jpg");
+}
+
+.card:hover, #pro:hover, #text a:hover, header ul a:hover {
+    transform: translateY(-5px);
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin-top: 15px; */
+    margin-bottom: 40px;
+}
+
+#img, #text {
+    border: 1px solid #594d43;
+    width: 500px;
+    height: 300px;
+    /* border-radius: 10px; */
+    padding: 20px;
+}
+
+#img {
+    background-image: url(/img/Makrome\ Tasarım\ Küpe.jpg);
+    background-size: 100% 100%;
+}
+
+#text {
+    background-color: #d6d2cd;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#tit {
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 20px;
+}
+
+#text a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #594d43;
+    /* border-radius: 10px; */
+    background-color: #594d43;
+    color: white;
+    width: 220px;
+    height: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#revolution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 200px;
+    line-height: 30px;
+    color: #594d43;
+    margin-top: 30px
+    /* background-color:#d6d2cd ; */
+}
+
+    #revolution h2 {
+        font-size: xx-large;
+        padding-bottom: 10px;
+    }
+
+    #revolution p {
+        font-size: larger;
+    }
+
+#advant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+    border: 1px solid #d6d2cd;
+    border-radius: 25px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#pros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .all p {
+        color: #594d43;
+        font-weight: bold;
+    }
+
+#handd {
+    background-image: url(/img/hand.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#van {
+    background-image: url(/img/van.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#com {
+    background-image: url(/img/com.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#advant h2 {
+    color: #594d43;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#lock {
+    background-image: url(/img/secbrown.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.imgg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px 0px 0px 0px;
+}
+
+#imgsec {
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/Brinco\ de\ Macramê_\ Aprenda\ a\ Fazer\ Dois\ Modelos\ Maravilhosos\ -\ Revista\ Artesanato.jpg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    margin: 40px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #d6d2cd;
+}
+
+    #imgsec a {
+        background-color: transparent;
+        border: 2px solid #d6d2cd;
+        width: 20%;
+        color: #d6d2cd;
+        font-weight: bold;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px 50px;
+    padding: 20px;
+    background-color: #d6d2cd;
+}
+
+.footsec {
+    display: flex;
+    flex-direction: column;
+}
+
+    .footsec p {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .footsec ul {
+        list-style-type: none;
+    }
+
+        .footsec ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footsec ul li {
+            margin-bottom: 5px;
+        }
+
+            .footsec ul li a:hover {
+                text-decoration: underline;
+            }
+
+#footlogo {
+    height: 100px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.footsec a:hover {
+    cursor: pointer;
+}
+
+#fin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/5;
+    font-weight: bold;
+}
+
+@media(max-width:768px) {
+    #handora {
+        font-size: 30px;
+        font-weight: bolder;
+        padding-right: 80px;
+    }
+
+    #hand {
+        font-size: 20px;
+        font-weight: bold;
+        padding-right: 30px;
+    }
+
+    header ul {
+        display: flex;
+        gap: 15px;
+        list-style-type: none;
+        padding-right: 15px;
+    }
+
+    #navlink {
+        position: absolute;
+        background-color: #d6d2cd;
+        text-align: left;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+    }
+
+    #close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px white solid;
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 50%;
+        padding: 5px 10px;
+    }
+
+    #menu {
+        display: block;
+        width: 30px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    header ul a:hover {
+        transform: translateY(0px);
+    }
+
+    #navlink {
+        display: block;
+        flex-wrap: wrap;
+        transition: 1s;
+    }
+
+    #navul li a {
+        display: block;
+    }
+
+    #navul {
+        display: block;
+    }
+
+    header ul li {
+        display: block;
+        margin-top: 30px;
+        padding-left: 10px;
+    }
+
+
+    #home {
+        width: 100%;
+        height: 40%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Brown Simple Knitting Workshop Facebook Post.png");
+        background-size: 100% 100%;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        color: #d6d2cd;
+        line-height: 50px;
+    }
+
+        #home a {
+            background-color: transparent;
+            border: 1px solid #d6d2cd;
+            width: 140px;
+            color: #d6d2cd;
+            font-size: 16px;
+            height: 40px;
+            margin-right: 35px;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    #search label {
+        font-weight: bold;
+        font-size: small;
+    }
+
+    #search div {
+        width: 80%;
+        height: 150px;
+        border: 1px #594d43 solid;
+        border-radius: 25px;
+        transform: translateY(-50px);
+        background-color: #d6d2cd;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    #img, #text {
+        border: 1px solid black;
+        width: 70%;
+        height: 250px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    #revolution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 60px;
+        line-height: 30px;
+    }
+
+        #revolution h2 {
+            font-size: x-large;
+            padding-bottom: 20px;
+        }
+
+        #revolution p {
+            font-size: large;
+        }
+
+    #pro {
+        color: #594d43;
+        margin: 25px 0px 40px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    #about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: -30px;
+        margin-bottom: 40px;
+    }
+
+    #advant h2 {
+        color: #594d43;
+        padding-top: 30px;
+        text-align: center;
+        font-size: large;
+    }
+
+    #imgsec a {
+        background-color: transparent;
+        border: 2px solid #d6d2cd;
+        width: 45%;
+        color: #d6d2cd;
+        font-weight: bold;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: smaller;
+    }
+
+    #imgsec h2 {
+        font-size: large;
+    }
+
+    #imgsec p {
+        font-size: 12px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px 50px;
+        padding: 20px;
+        background-color: #d6d2cd;
+    }
+
+    #fin {
+        grid-column: 1;
+    }
+
+    #footlogo {
+        height: 100px;
+        width: 250px;
+        /* margin-top: -25px; */
+        margin: 0 auto;
+    }
+
+    #logo img {
+        width: 110px;
+        height: 45px;
+        padding-left: 10px;
+        /* text-decoration: none;
+    color: black;
+    font-size: xx-large; */
+    }
+}
