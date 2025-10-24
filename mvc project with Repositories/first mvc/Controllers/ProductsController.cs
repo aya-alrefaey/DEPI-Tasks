@@ -1,23 +1,26 @@
-﻿using first_mvc.Models;
-using Microsoft.AspNetCore.Mvc;
+using first_mvc.Models;
 using first_mvc.Repositories;
+using first_mvc.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace first_mvc.Controllers
 {
     public class ProductsController : Controller
     {
-        IProductRepo productrepo;
-        ICategoriesRepo catrepo;
-        public ProductsController(IProductRepo pro, ICategoriesRepo cat)
+        //IProductRepo productrepo;
+        //ICategoriesRepo catrepo;
+        IProductService proser;
+        ICategoryService catser;
+        public ProductsController(IProductService pro,ICategoryService cat)
         {
-            productrepo = pro;
-            catrepo = cat;
+            proser = pro;
+            catser= cat;
         }
         [Route("/admin/products")]
         public IActionResult Index()
         {
 
-            var products = productrepo.get_all();
+            var products = proser.get_all();
             return View(products);
         }
 
@@ -28,7 +31,7 @@ namespace first_mvc.Controllers
             var obj = new ProductCreateViewModel
             {
                 product = new Products(),
-                categories = catrepo.get_all()
+                categories = catser.get_all()
             };
             return View(obj);
         }
@@ -39,17 +42,17 @@ namespace first_mvc.Controllers
             if (string.IsNullOrEmpty(pro.product.Name))
             {
                 errormsg("Plz Enter Product Name");
-                pro.categories = catrepo.get_all();
+                pro.categories = catser.get_all();
                 return View(pro);
             }
             if (string.IsNullOrEmpty(pro.product.Price))
             {
                 errormsg("Plz Enter Product Price");
-                pro.categories = catrepo.get_all();
+                pro.categories = catser.get_all();
                 return View(pro);
             }
-            productrepo.add(pro.product);
-            productrepo.save();
+            proser.add(pro.product);
+            //productrepo.save();
             //hc.Add(pro.product);
             //hc.SaveChanges();
 
@@ -65,7 +68,7 @@ namespace first_mvc.Controllers
         public IActionResult edit_product(int id)
         {
             //var pro = hc.products.FirstOrDefault(e => e.Id == id);
-            var pro = productrepo.find_id(id);
+            var pro = proser.find_id(id);
             if (pro == null)
             {
                 return NotFound();
@@ -73,7 +76,7 @@ namespace first_mvc.Controllers
             var viewModel = new ProductCreateViewModel
             {
                 product = pro,
-                categories = catrepo.get_all()
+                categories = catser.get_all()
             };
 
             return View(viewModel);
@@ -81,28 +84,17 @@ namespace first_mvc.Controllers
 
         [HttpPost]
         [Route("/admin/product/edit/{id}")]
-        public IActionResult edit_product(int id, ProductCreateViewModel updated)
+    public IActionResult edit_product(Products pro)
         {
-            var pro = productrepo.find_id(id);
-            //var ppro=hc.products.FirstOrDefault(e => e.Id == id);
+          
             if (pro == null)
             {
                 return NotFound();
             }
 
 
-            pro.Name = updated.product.Name;
-            pro.Price = updated.product.Price;
-            pro.Description = updated.product.Description;
-            pro.Quantity = updated.product.Quantity;
-            pro.categoryId = updated.product.categoryId;
-
-            //hc.Update(pro);
-            //hc.SaveChanges();
-            productrepo.update(pro);
-            productrepo.save();
-
-            //ViewBag.msg = "Customer Edited Successfully";
+            proser.update(pro);
+           
             return RedirectToAction("index");
         }
 
@@ -110,15 +102,15 @@ namespace first_mvc.Controllers
         public IActionResult DeletProduct(int id)
         {
             //var pro = hc.products.FirstOrDefault(e => e.Id == id);
-            var pro = productrepo.find_id(id);
+            var pro = proser.find_id(id);
             if (pro == null)
             {
                 return NotFound();
             }
             //hc.Remove(pro);
             //hc.SaveChanges();
-            productrepo.delete(pro);
-            productrepo.save();
+            proser.delete(pro);
+            //productrepo.save();
             return RedirectToAction("Index", "Products");
         }
 
@@ -127,7 +119,7 @@ namespace first_mvc.Controllers
         public IActionResult product_details(int id)
         {
             //var product = hc.products.Include(e => e.category).FirstOrDefault(e => e.Id == id);
-            var product = productrepo.find_withcat(id);
+            var product = proser.find_withcat(id);
             return View(product);
         }
     }
