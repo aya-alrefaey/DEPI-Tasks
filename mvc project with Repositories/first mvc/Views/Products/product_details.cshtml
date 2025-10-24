@@ -1,0 +1,67 @@
+﻿@model Products
+@{
+    Layout = "_dashboard";
+}
+@section styles {
+    <link href="/assets/css/dataTables.bootstrap4.css" rel="stylesheet" />
+}
+
+
+@section breadcrumb {
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Customers</h4>
+                <div class="ms-auto text-end">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <a href="#">Add New</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<h5 class="card-title">Customers</h5>
+<div class="table-responsive">
+    <table id="zero_config"
+           class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>category</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+           
+                <tr>
+                    <td>@Model.Id</td>
+                    <td>@Model.Name</td>
+                <td>@Model.Description</td>
+                <td>@Model.Price</td>
+                 <td>@Model.Quantity</td>
+                <td>@Model.category.Name</td>
+                    
+                </tr>
+           
+        </tbody>
+    </table>
+</div>
+@section scripts {
+    <script src="/assets/js/datatables.min.js"></script>
+    <script>
+        /****************************************
+         *       Basic Table                   *
+         ****************************************/
+        $("#zero_config").DataTable();
+    </script>
+}

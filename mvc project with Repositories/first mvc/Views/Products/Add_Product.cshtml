@@ -1,0 +1,107 @@
+﻿@model ProductCreateViewModel
+@{
+    Layout = "_dashboard";
+}
+@section breadcrumb {
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">Add New Product</h4>
+                <div class="ms-auto text-end">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <a href="#">Add New </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+@if(ViewBag.error!=null){
+<div class="alert alert-danger">
+   @ViewBag.error
+    </div>
+}
+<form class="form-horizontal" method="post">
+    <div class="card-body">
+        <div class="form-group row">
+            <label for="name"
+                   class="col-sm-3 text-end control-label col-form-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text"
+                       class="form-control"
+                       id="name"
+                       value="@Model.product.Name"
+                       placeholder="Name Here"
+                       name="product.name" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="desc"
+                   class="col-sm-3 text-end control-label col-form-label">Description</label>
+            <div class="col-sm-9">
+                <input type="text"
+                       class="form-control"
+                       id="desc"
+                       value="@Model.product.Description"
+                       placeholder="Description Here"
+                       name="product.description" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="price"
+                   class="col-sm-3 text-end control-label col-form-label">Price</label>
+            <div class="col-sm-9">
+                <input type="text"
+                       class="form-control"
+                       id="price"
+                       value="@Model.product.Price"
+                       placeholder="Price Here"
+                       name="product.price" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="qty"
+                   class="col-sm-3 text-end control-label col-form-label">Quantity</label>
+            <div class="col-sm-9">
+                <input type="number"
+                       class="form-control"
+                       id="qty"
+                       placeholder="Quantity Here"
+                       value="@Model.product.Quantity"
+                       name="product.Quantity" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="fname"
+                   class="col-sm-3 text-end control-label col-form-label">Category</label>
+            <div class="col-sm-9">
+                <select class="form-select" name="product.categoryId">
+                    @foreach (var item in Model.categories)
+                    {
+                        if (@item.id == Model.product.categoryId)
+                        {
+                            <option value="@item.id" selected>@item.Name</option>
+                        }
+                        <option value="@item.id">@item.Name</option>
+                      
+                    } 
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="border-top">
+        <div class="card-body">
+            <button type="submit" class="btn btn-primary">
+                Create
+            </button>
+        </div>
+    </div>
+</form>
+<partial name="_ValidationScriptsPartial"></partial>

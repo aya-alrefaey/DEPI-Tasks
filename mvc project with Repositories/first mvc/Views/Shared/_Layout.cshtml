@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/index.css">
+    <title>Handora</title>
+</head>
+<body>
+    <header>
+        <!-- <a href="index.html" id="logo"><img src="img/logohand-removebg-preview.png" alt="logo" ></a>  -->
+        <a href="/home" id="logo"><img src="img/logof.png" alt="logo"></a>
+        <img src="img/menu.png" alt="menu" id="menu" onclick="showmenu()">
+        <div id="navlink">
+            <ul id="navul">
+
+                @* <li><a href="#">Products</a></li> *@
+                <li> <a href="/admin/index">Dashboard</a></li>
+                <li>
+                    <a href=""><img src="img/cart-bold.png" alt="cart" width="26px"></a>
+                </li>
+                <li> <a href=""><img src="img/user-filled.png" alt="login" width="26px"></a></li>
+                <li id="close"> <a href="#" onclick="hidemenu()">Close</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="footsec">
+            <!-- <img  src="img/logohand-removebg-preview.png" alt="logo" id="footlogo"> -->
+            <img src="img/logof.png" alt="logo" id="footlogo">
+        </div>
+
+        <div class="footsec">
+
+            <p>About</p>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li> <a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li> <a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footsec">
+            <p>My Account</p>
+            <ul>
+                <li><a href="#">Sign In</a></li>
+                <li> <a href="#">View Cart</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="footsec">
+
+
+            <p> Contact </p>
+            <ul class="footlist">
+                <li>Email:<a href="https://mail.google.com/mail/u/0/#inbox">Handora@gmail.com</a></li>
+                <li> Phone:+201111222223</li>
+            </ul>
+
+        </div>
+        <div id="fin">
+            <p> &copy; 2025 Handora.All Rights Preserved</p>
+        </div>
+
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+</html>
