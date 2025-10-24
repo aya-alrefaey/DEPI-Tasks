@@ -1,4 +1,4 @@
-﻿@model ProductCreateViewModel
+@model ProductCreateViewModel
 @{
     Layout = "_dashboard";
 }
@@ -38,7 +38,7 @@
                        id="name"
                        value="@Model.product.Name"
                        placeholder="Name Here"
-                       name="product.name" />
+                       name="name" />
             </div>
         </div>
         <div class="form-group row">
@@ -50,7 +50,7 @@
                        id="desc"
                        value="@Model.product.Description"
                        placeholder="Description Here"
-                       name="product.description" />
+                       name="description" />
             </div>
         </div>
         <div class="form-group row">
@@ -62,7 +62,7 @@
                        id="price"
                        value="@Model.product.Price"
                        placeholder="Price Here"
-                       name="product.price" />
+                       name="price" />
             </div>
         </div>
 
@@ -75,7 +75,7 @@
                        id="qty"
                        placeholder="Quantity Here"
                        value="@Model.product.Quantity"
-                       name="product.Quantity" />
+                       name="Quantity" />
             </div>
         </div>
 
@@ -83,7 +83,7 @@
             <label for="fname"
                    class="col-sm-3 text-end control-label col-form-label">Category</label>
             <div class="col-sm-9">
-                <select class="form-select" name="product.categoryId">
+                <select class="form-select" name="categoryId">
                     @foreach (var item in Model.categories)
                     {
                         if (@item.id == Model.product.categoryId)
